@@ -1,1 +1,18 @@
-In order to implement the website search, I wrote a quick form that 
+In order to implement the website search, I made an html page that would have an
+input modeled on how google looks but with the NBA logo. The search field would
+take in names and then after three characters are typed would send an AJAX request
+that would hit a php script with whatever the user has currently typed. This php
+script would take a the letters typed into the search box at the time, and connect
+to an RDS database and perform a query with wildcards on both sides of the search
+parameter in order to bring up any relevant players that the user might search for.
+the results of that query are presented as a JSON object which the AJAX request then
+parses and creates "cards" for each player, showing their name, team icon, and stats
+in a table off to the side.
+
+In order to implement the website, I utilized namecheap as a provider of a name,
+and I used Amazon EC2 for hosting the website, and Amazon's RDS for hosting the
+database i kept player data in. In order to get my data, i used a csv file given
+to me by my instructor on NBA player stats, cleaned it up by writing a script in
+python and having that python generate the SQL code in order to create the tables
+necessary for the data in the csv file. I then piped the SQL code to my RDS instance
+which set up the table and put in all the necessary data.

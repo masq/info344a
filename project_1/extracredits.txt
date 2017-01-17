@@ -1,0 +1,8 @@
+I used AJAX on the search, you can see this by starting to type out a name like 
+"lebron", and you will see if come up with players as it becomes clear. I
+implemented it using javascript.
+
+My results page doesn't quite look "really really nice", but it does look at least
+"nice" in my opinion. I implemented it by using some of the images on the NBA
+website for the team, as well as HTML/CSS/JS for the formatting and coloring of
+each player's "card" in the results area on the page.
