@@ -21,16 +21,16 @@ main {
   flex-direction: column;
 }
 
-main > form {
+main > div {
   display: flex;
   width: 100%;
 }
 
-main > form > button.input-group-addon {
+main > div > button.input-group-addon {
   width: auto;
 }
 
-main > form > input {
+main > div > input {
   padding: 0 10px;
   width: 100%;
 }
