@@ -16,3 +16,9 @@ to me by my instructor on NBA player stats, cleaned it up by writing a script in
 python and having that python generate the SQL code in order to create the tables
 necessary for the data in the csv file. I then piped the SQL code to my RDS instance
 which set up the table and put in all the necessary data.
+
+In order to get all of the team icons, I used the NBA website to see the URLs of
+their team icons and used them myself. In order to do this, i had to issue some
+update statements to my database as some of the team names that were in my database
+weren't the abbreviations that the NBA website was using. This RDS instance was
+running MySQL.
