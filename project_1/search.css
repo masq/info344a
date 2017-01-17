@@ -1,0 +1,103 @@
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  /*
+  background-image: url("nba_bg.png");
+  background-size: 100vw 100vh;
+  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main > form {
+  display: flex;
+  width: 100%;
+}
+
+main > form > button.input-group-addon {
+  width: auto;
+}
+
+main > form > input {
+  padding: 0 10px;
+  width: 100%;
+}
+
+img {
+  z-index: -10;
+}
+
+players {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+player {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #fff;
+  background-image: linear-gradient(to bottom, #006cb7 30%, #FFF 50%, #006cb7 70%);
+}
+
+player > h1 {
+  color: #FFF;
+}
+
+player > hr {
+  width: 100%;
+}
+
+player > section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+player > section > img.team {
+  margin-right: auto;
+  z-index: auto;
+  position: relative;
+  bottom: 20rem;
+}
+
+player > section > table {
+  margin-left: auto;
+}
+
+player > table {
+  margin-left: auto;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #ddd;
+  padding: 4px 6px;
+}
+
+.table-striped tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-striped tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.table-hover tr:hover {
+  background-color: #f5f5ff;
+}
