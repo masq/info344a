@@ -1,0 +1,90 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 45vh;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: #333;
+    background-color: #F6F6F6;
+}
+
+header {
+  background: url('http://s3-eu-west-1.amazonaws.com/punchng/wp-content/uploads/2016/10/14202759/Wiki.jpg') no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: var(--header-height); /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div {
+    max-height: 3rem;
+    width: 100%;
+}
+
+main > div > div {
+    width: 100%;
+}
+
+output {
+    display: block;
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid transparent;
+}
+
+output.active {
+    border-color: #CCC;
+    border-top-color: transparent;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+    margin-bottom: 50px;
+}
+
+button {
+    display: none;
+}
+
+input {
+    width: 100%;
+    padding: 5px 10px;
+    height: 3rem;
+    border: 1px solid #CCC;
+}
+input:focus, input:hover {
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
+}
+
+output > a {
+    height: 3em;
+    padding: 5px 10px;
+    box-sizing: content-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    line-height: 3em;
+    z-index: 10;
+}
+
+output > a:hover {
+    background-color: #F0F0FF;
+}
+
+

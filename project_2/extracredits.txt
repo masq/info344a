@@ -1,0 +1,14 @@
+I implemented the Hybrid Trie-List structure. I did this by making an interface
+of TNode, and then creating two classes that implement that interface and then
+after a certain threshhold of words in a ListNode (a node that just has a list
+of words in it) it will turn into a Trie and branch out its elements into
+smaller ListNodes and/or Tries.
+
+I also handle misspellings gracefully, by recursively going down my Trie until I
+reach a ListNode, and returning all elements in that ListNode up to ten.
+However, if there are less than 10 words in that ListNode, I will move down
+further letters into the Trie a level up until I find more ListNodes to collect
+words from until I have ten words to return to the user. Additionally, the
+ListNode will several words, some of which aren't quite like the word someone
+was trying to type, and so the structure naturally offers suggestions to
+misspellings (so far as the structure knows about the word/wikipedia page title).
