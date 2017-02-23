@@ -1,0 +1,10 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [2/23/2017 6:45:03 AM] Emulator config file set to d:\masq\documents\visual studio 2015\Projects\WebCrawler\WebCrawler\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [2/23/2017 6:45:03 AM] DiagnosticsStoreRootPath set to: C:\Users\masq\AppData\Local\dftmp\Resources\10ac34bf-27a1-463d-8abc-15ca273b5718
+DiagnosticsPluginLauncher.exe Information: 0 : [2/23/2017 6:45:03 AM] Loading config file: d:\masq\documents\visual studio 2015\Projects\WebCrawler\WebCrawler\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [2/23/2017 6:45:03 AM] Config file to read: d:\masq\documents\visual studio 2015\Projects\WebCrawler\WebCrawler\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [2/23/2017 6:45:03 AM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [2/23/2017 6:45:03 AM] Emulator config file set to d:\masq\documents\visual studio 2015\Projects\WebCrawler\WebCrawler\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [2/23/2017 6:45:03 AM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [2/23/2017 6:45:03 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [2/23/2017 6:45:03 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [2/23/2017 6:45:03 AM] Stopping the running plugin, if any

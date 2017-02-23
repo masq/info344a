@@ -1,0 +1,19 @@
+In order to implement the state of each web crawler, i have each crawler represented as an object that has a state field that gets updated everytime it either parses an XML page, an HTML page, or doesn't have anything to do. I update these values to a "stats" azure table every 10 seconds and have an ajax request get that info every ten seconds.
+
+The machine counters are fields in my WorkerRole file that i get the next value of each time i call them using PerformanceCounters.
+
+#URLs crawled is an int that i increment everytime i crawl an HTML page.
+
+Last 10 urls are a queue of urls that I store and push to the stats table every ten seconds as a string deliminated by ||||| for values and ;;;;; for rows (new URL objects).
+
+The size of queue is gotten by looking at the Azure queue's ApproximateMessageCount field.
+
+The size of index should be the number of URLs crawled, as I spent a lot of effort trying to ensure that i didn't crawl any URL i didn't have to. Although, this number could get slightly off with the threading I implemented in the crawlers.
+
+Errors are kept in a queue and then flushed out to the stats table every ten seconds. Errors are picked up with a try catch around every http call that will write them out to a queue in the catch statement. The problem with this method is that on the client side, any errors that get old are hard to get to... In retrospect I maybe should have made a special partition that keeps errors in my table.
+
+Clearing everything is asynchronously handled by calling clear on all the queues, and then delete on the tables. Then, i will await those things to finish before returning a boolean saying that it finished.
+
+In order to start crawling, i have a power button that will reinitialize everything (crawlers, queues, tables, etc) and then it will fetch the robots.txts for cnn.com and bleacherreport.com and put the rules into the crawlers.
+
+in order to get data from the index, i have a search bar at the top of the page, that you can paste a URL into, and an alert box will pop up with the information on it. I do this by making a query to the urldata table using the partition key derived from the domain, and the row key which is a sha256 hash of the url.

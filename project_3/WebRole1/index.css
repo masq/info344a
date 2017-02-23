@@ -1,0 +1,142 @@
+﻿:root {
+    --nav-height: 50px;
+    --bg-color: #F0F0F0;
+    --bd-color: #DDD;
+    --hl-color: #63c;
+}
+
+body {
+    padding-top: var(--nav-height);
+    background-color: var(--bg-color);
+}
+
+#main-pane {
+    margin-bottom: 50px;
+}
+
+main {
+    display: table;
+    width: 100%;
+    margin-top: 25px;
+}
+
+#searchHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7.5px;
+    line-height: 50px;
+}
+
+tabgroup,
+row {
+    display: table-row;
+}
+
+.output {
+    border: 1px solid var(--bd-color);
+    min-height: 600px;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    background-color: #FFF;
+}
+
+tabs {
+    display: flex;
+    position: relative;
+    top: 1px;
+}
+
+tab {
+    color: #999;
+    border: 1px solid transparent;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    padding: 20px;
+    cursor: pointer;
+    min-width: 100px;
+    height: var(--nav-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+tab:hover {
+    color: #333;
+}
+
+tab.active {
+    border-color: var(--bd-color);
+    border-bottom-color: transparent;
+    color: #333;
+    cursor: default;
+    background-color: #FFF;
+}
+
+tab.active::before {
+    content: "";
+    position: absolute;
+    background: var(--hl-color);
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    height: 3px;
+}
+
+.output > div {
+    display: none;
+}
+
+.output > div.active {
+    display: block;
+}
+.output > div > * {
+    margin-bottom: 25px;
+}
+
+.overall output {
+    flex: 4 0 0;
+    padding-top: 0;
+    margin-right: 15px;
+}
+
+.overall > div {
+    display: flex;
+}
+
+.overall > div > div {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.crawlers {
+    display: flex;
+    flex-direction: column;
+}
+
+crawler {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+crawler > graph,
+crawler > p {
+    flex: 8 0 0;
+}
+
+crawler > button.btn,
+.overall > div > div > button.btn {
+    border-radius: 0;
+}
+
+crawler > button.btn {
+    flex: 1 0 0;
+}
+
+.btn-danger {
+    background-color: var(--hl-color) !important;
+    border-color: #6030C0;
+}

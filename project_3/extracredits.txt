@@ -1,0 +1,1 @@
+In order to do multi-threading, I used the async-await pattern all throughout my code whenever possible. This allows for other tasks to be processed while waiting for the response of asynchronous tasks. there is a field in my WorkerRole class that specifies the number of crawlers/threads to work with.
