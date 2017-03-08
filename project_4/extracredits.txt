@@ -1,0 +1,3 @@
+I didn't go TOO crazy, but i did make my results page decently pretty with nice
+boxes for each result and some cool buttons down at the bottom. I didn't use any
+3rd party libraries for any of it except for the Roboto font.

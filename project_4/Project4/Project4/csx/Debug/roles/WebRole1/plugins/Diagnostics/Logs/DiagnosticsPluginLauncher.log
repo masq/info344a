@@ -1,0 +1,19 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Emulator config file set to d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] DiagnosticsStoreRootPath set to: C:\Users\masq\AppData\Local\dftmp\Resources\e0c6eee3-5ddd-4afb-82d3-481aa9848d52
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Loading config file: d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Config file to read: d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Emulator config file set to d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:12 AM] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Error: 0 : [3/8/2017 4:26:22 AM] DiagnosticsPlugin launch failed with exit code -1
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:26:22 AM] DiagnosticPlugin exited with code -1

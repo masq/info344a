@@ -1,0 +1,204 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 45vh;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: #333;
+    position: relative;
+    background-color: #F9F9F9;
+    font-family: Roboto, sans-serif;
+}
+
+.hidden {
+    display: none!important;
+}
+
+header {
+  /*background: url('http://s3-eu-west-1.amazonaws.com/punchng/wp-content/uploads/2016/10/14202759/Wiki.jpg') no-repeat center center;*/
+  background: url('http://www.cnn.com/services/trusted/images/cnn.header.gif') no-repeat center center;
+  /*background: url('http://www.ethnobotanicalcouncil.org/wp-content/uploads/2014/10/cnn.png') no-repeat center center;*/
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: var(--header-height); /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main.active {
+    margin: 0;
+    padding: 25px;
+    min-height: unset;
+}
+
+main > div > div {
+    display: flex;
+}
+
+main > div,
+main > div > div,
+main > div > div > div {
+    max-height: 3rem;
+    width: 100%;
+    z-index: 5;
+}
+
+output {
+    display: block;
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid transparent;
+    z-index: 10;
+}
+
+output.active {
+    border-color: #CCC;
+    border-top-color: transparent;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100%;
+    padding: 5px 10px;
+    height: 3rem;
+    border: 1px solid #CCC;
+}
+input:focus, input:hover {
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
+}
+
+output > a {
+    height: 3em;
+    padding: 5px 10px;
+    box-sizing: content-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    line-height: 3em;
+}
+
+output > a:hover {
+    background-color: #F0F0FF;
+}
+
+#stats {
+    margin: 50px;
+    margin-top: -20px;
+    color: #AAA;
+    font-size: 14px;
+}
+
+nbastats {
+    display: block;
+    padding: 25px 15px;
+    overflow: auto;
+    background-color: #F2F2F2;
+    border: 1px solid #DBDBDB;
+}
+
+nbastats > table {
+    border-collapse: collapse;
+    background-color: #FCFCFC;
+}
+
+nbastats td, nbastats th {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+nbastats th {
+    background-color: #F3F3F3;
+}
+
+results {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-top: 30px;
+}
+
+result {
+    border: 1px solid #DDD;
+    background-color: #FFF;
+    box-shadow: -4px 3px 0 #DDD;
+    padding: 15px 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+result .timestamp {
+    float: right;
+    color: #AAA;
+    font-size: 14px;
+    font-family: "Times New Roman", serif;
+}
+
+result .url {
+    color: #3A3;
+    font-size: 12px;
+}
+
+pages {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+pages > a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #DDD;
+    background-image: linear-gradient(to bottom, #FFF 0%, #F6F6F6 100%);
+    color: #333;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+pages > a.expansion {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+}
+
+pages > a.active {
+    border-color: #39D;
+    color: #3AF;
+}
+
+.chitikaAdContainer {
+    display: none;
+}
+
+.chitikaAdContainer.active {
+    display: block;
+}
+
+.chitikaAdContainer.active > iframe {
+    width: 100%;
+}

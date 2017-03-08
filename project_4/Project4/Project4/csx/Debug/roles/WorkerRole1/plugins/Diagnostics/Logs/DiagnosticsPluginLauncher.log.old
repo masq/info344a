@@ -1,0 +1,27 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Emulator config file set to d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] DiagnosticsStoreRootPath set to: C:\Users\masq\AppData\Local\dftmp\Resources\48ca2916-f598-4ff0-b25d-e2a5b8ed18d0
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Loading config file: d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Config file to read: d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Emulator config file set to d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Found a MonAgentHost.exe. WadArguments: "d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WebRole1\plugins\Diagnostics\Monitor\x64\MonAgentHost.exe" -LocalPath "C:\Users\masq\AppData\Local\dftmp\Resources\e0c6eee3-5ddd-4afb-82d3-481aa9848d52\WAD0105"  -ConfigFile "C:\Users\masq\AppData\Local\dftmp\Resources\e0c6eee3-5ddd-4afb-82d3-481aa9848d52\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-bd54d86113b041808ddff05837f4fc36  -TotalShutDownEvent WADDM-TotalShutDown-bd54d86113b041808ddff05837f4fc36 -InitializedEvent WADM-StartUp-bd54d86113b041808ddff05837f4fc36 -parent 17440 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000.
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Found a DiagnosticsPlugin.exe. WadArguments: "D:\Masq\Documents\Visual Studio 2015\Projects\Project4\Project4\csx\Debug\roles\WebRole1\plugins\Diagnostics\DiagnosticsPlugin.exe" DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5.
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Loading config file: d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Config file to read: d:\Masq\documents\visual studio 2015\Projects\Project4\Project4\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Found a running wad2 MA not sharing the same local directory
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:25:21 AM] Found a DiagnosticsPlugin.exe. WadArguments: "D:\Masq\Documents\Visual Studio 2015\Projects\Project4\Project4\csx\Debug\roles\WebRole1\plugins\Diagnostics\DiagnosticsPlugin.exe" DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5.
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:26:21 AM] Forcefully terminated DiagnosticsPlugin.exe process with pid 17440
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:26:21 AM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:26:21 AM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:26:21 AM] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:27:31 AM] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [3/8/2017 4:27:31 AM] DiagnosticPlugin exited with code 0

@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>MACP v0.1</title>
+    <meta charset="utf-8" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="admin.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="admin.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MACP</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+                <div id="searchHolder" class="nav navbar-nav navbar-right">
+                    <input id="search" type="text" class="form-control" placeholder="Search a URL...">
+                    <button id="test" class="btn btn-default">Search!</button>
+                </div>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div id="main-pane" class="container-fluid">
+        <h1>Masqrawler Administrative Control Panel <small>v0.1</small></h1>
+
+        <main>
+            <tabgroup>
+                <!-- TABS -->
+                <tabs>
+                    <tab class="active" data-target="#control">Control</tab>
+                    <tab data-target="#stats">Stats</tab>
+                    <tab data-target="#errors">Errors</tab>
+                </tabs>
+            </tabgroup>
+            <row>
+                <!-- TAB OUTPUT / BODY -->
+                <div class="output">
+
+                    <div id="control" class="active">
+                        <!-- Control Tab -->
+                        <fieldset class="overall">
+                            <legend>Overall Crawler Control Commands</legend>
+                            <div>
+                                <output>
+                                    <pre><code></code></pre>
+                                </output>
+                                <div>
+                                    <button id="pause" type="button" class="btn btn-default" title="pause/resume crawling" disabled><span class="glyphicon glyphicon-play"></span> All Crawling</button>
+                                    <button id="stop" type="button" class="btn btn-danger" title="start/stop crawling"><span class="glyphicon glyphicon-off"></span> All Crawling</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="crawlers">
+                            <legend>Individual Crawler Control Commands</legend>
+                            <div id="crawlers">
+                                <!--<crawler>
+                                    <p class="lead"></p>
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pause"></span></button>
+                                    <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-off"></span></button>
+                                </crawler>-->
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div id="stats">
+                        <!-- Stats tab -->
+                        <fieldset>
+                            <legend>Stats</legend>
+                            <div>
+                                <p class="lead"><span id="queueSize">0</span> URLs waiting to be crawled</p>
+                                <p class="lead"><span id="tableSize">0</span> URLs crawled so far</p>
+                                <p class="lead"><span id="cpuUtil">0</span> CPU Utilization </p>
+                                <p class="lead"><span id="ramAvail">0</span> RAM available</p>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>10 Most Recent URLs Crawled</legend>
+                            <table id="recentsTable" class="table table-hover table-striped table-bordered">
+                                <thead>
+                                    <tr><th>#</th><th>URL</th><th>Title</th><th>Date</th></tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </fieldset>
+                    </div>
+
+                    <div id="errors">
+                        <!-- Errors tab -->
+                        <fieldset>
+                            <legend>URLs with Errors</legend>
+                            <table id="errorsTable" class="table table-hover table-striped table-bordered">
+                                <thead>
+                                    <tr><th>#</th><th>URL</th><th>Error</th><th>Date</th></tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </fieldset>
+                    </div>
+                </div>
+            </row>
+        </main>
+
+    </div>
+</body>
+</html>
